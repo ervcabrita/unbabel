@@ -1,0 +1,12 @@
+AC: 
+It's expected that this service must support 75 users at any given moment and must be able to handle 350 requests per second. 
+The response time must be under 200 ms.
+
+Results:
+AC seems too optimistic since the results were worse
+throughput: 269 requests /s
+Response time avg: 277 > 200 
+session times: 15-60m
+
+it is recommended to improve server capacity, since for 75 users it is unlikely that any other issue could affect the results as much like latency/network/others.
+
