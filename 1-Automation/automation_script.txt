@@ -1,0 +1,66 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://staging.annotation.tools.unbabel.com/')
+
+WebUI.click(findTestObject('Object Repository/unbabel1/Page_Annotation Tool/button_Sign In'))
+
+WebUI.setText(findTestObject('Object Repository/unbabel1/Page_Annotation Tool/input_Username_username'), 'emanuel+annotator2')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/unbabel1/Page_Annotation Tool/input_Password_password'), 'WM8AAaMCudsr3ue4Oktwww==')
+
+WebUI.delay(120)
+
+WebUI.click(findTestObject('Object Repository/unbabel1/Page_Annotation Tool/button_Sign in (1)'))
+
+WebUI.click(findTestObject('Object Repository/unbabel1/Page_Annotation Tool  Home/a_EN to ES'))
+
+WebUI.click(findTestObject('Object Repository/unbabel1/Page_Annotation Tool/span_Back_c-TopBar__circle is-'))
+
+WebUI.click(findTestObject('Object Repository/unbabel1/Page_Annotation Tool/p_HolaMuchas gracias por su co'))
+
+WebUI.click(findTestObject('Object Repository/unbabel1/Page_Annotation Tool/span_Accuracy'))
+
+WebUI.click(findTestObject('Object Repository/unbabel1/Page_Annotation Tool/span_Mistranslation'))
+
+WebUI.click(findTestObject('Object Repository/unbabel1/Page_Annotation Tool/span_Ambiguous Translation'))
+
+WebUI.click(findTestObject('Object Repository/unbabel1/Page_Annotation Tool/input_Major_severity'))
+
+WebUI.click(findTestObject('Object Repository/unbabel1/Page_Annotation Tool/button_Add'))
+
+WebUI.click(findTestObject('Object Repository/unbabel1/Page_Annotation Tool/div_-  Finish or Report'))
+
+WebUI.setText(findTestObject('Object Repository/unbabel1/Page_Annotation Tool/textarea_Report_comment'), 'annotation1')
+
+WebUI.click(findTestObject('Object Repository/unbabel1/Page_Annotation Tool/button_Finish'))
+
+WebUI.click(findTestObject('Object Repository/unbabel1/Page_Annotation Tool/button_Yes'))
+
+WebUI.click(findTestObject('Object Repository/unbabel1/Page_Annotation Tool/button_Back'))
+
+WebUI.click(findTestObject('Object Repository/unbabel1/Page_Annotation Tool/span_Back_c-TopBar__circle is-_1'))
+
+WebUI.click(findTestObject('Object Repository/unbabel1/Page_Annotation Tool/button_Back'))
+
+WebUI.click(findTestObject('Object Repository/unbabel1/Page_Annotation Tool  Home/button_Hi Emanuelannotator2'))
+
+WebUI.click(findTestObject('Object Repository/unbabel1/Page_Annotation Tool  Home/a_Logout'))
+
+WebUI.closeBrowser()
+
